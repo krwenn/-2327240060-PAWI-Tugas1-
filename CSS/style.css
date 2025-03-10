@@ -62,3 +62,23 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-section {
+    padding: 50px 0;
+}
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+.map-container {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}

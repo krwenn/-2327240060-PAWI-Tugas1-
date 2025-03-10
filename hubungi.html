@@ -1,23 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hubungi Kami</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <nav>
-        <div class="wrapper">
-            <div class="logo"><a href="#">CV. Teknologi Digital</a></div>
-            <div class="menu">
-                <ul>
-                    <li><a href="main.html">Home</a></li>
-                    <li><a href="profil.html">Profil</a></li>
-                    <li><a href="jasa.html">Catalog</a></li>
-                </ul>
-            </div> 
+    <nav class="navbar navbar-expand-lg" style="background:  bisque;">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img src="images/Logo.png" alt="" width="120px" height="120px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="jasa.html">Catalog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hubungi.html">Hubungi Kami</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Section Hubungi Kami -->
+    <div class="container contact-section">
+        <div class="row">
+            <!-- Formulir Hubungi Kami -->
+            <div class="col-md-6">
+                <h3>Hubungi Kami</h3>
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Nama Lengkap" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" placeholder="No HP" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4" placeholder="Pesan" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Kirim</button>
+                </form>
+            </div>
+
+            <!-- Informasi Kontak -->
+            <div class="col-md-6">
+                <h3>Informasi Kontak</h3>
+                <p><strong>Alamat:</strong> Jl. Rajawali No.5632</p>
+                <p><strong>Email:</strong> TeknologiDigital@email.com</p>
+                <p><strong>Telepon:</strong> +62 812-3456-7890- </p>
+                <p><strong>Jam Operasional:</strong> Senin - Sabtu, 08.00 - 17.00</p>
+                
+                <!-- Google Maps -->
+                <div class="map-container">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.6278471963889!2d104.76384329796878!3d-2.971999741494656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b766d5d005587%3A0xec5d8b3472861215!2sJl.%20Rajawali%2C%209%20Ilir%2C%20Kec.%20Ilir%20Tim.%20II%2C%20Kota%20Palembang%2C%20Sumatera%20Selatan%2030114!5e0!3m2!1sid!2sid!4v1741589782494!5m2!1sid!2sid" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <a href="https://wa.me/6281234567890" class="btn btn-success mt-3 w-100">Chat di WhatsApp</a>
+            </div>
         </div>
-    </nav>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; CV.Teknologi Digital All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
